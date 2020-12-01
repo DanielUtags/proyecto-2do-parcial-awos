@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 
 app.use(require('./routes/usuario'))
 
-await mongoose.connect('mongodb://localhost:27017/cafeteria',{
+mongoose.connect('mongodb://localhost:27017/cafeteria',{
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
